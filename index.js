@@ -6,7 +6,7 @@ var list = require('autos-listing');
 
 module.exports = function (sandbox, fn, options) {
     Vehicle.find({
-        query: options.query,
+        query: options,
         images: '288x162'
     }, function (err, vehicles) {
         if (err) {
@@ -14,7 +14,8 @@ module.exports = function (sandbox, fn, options) {
         }
         list(sandbox, fn, {
             vehicles: vehicles,
-            styles: options.styles
+            title: 'Featured',
+            size: 4
         });
     });
 };

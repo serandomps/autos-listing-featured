@@ -3,6 +3,7 @@
     "description": "autos-listing-featured component",
     "local": [],
     "scripts": ["index.js"],
+    "styles": ["styles.css"],
     "main": "index.js",
     "dependencies": {
         "serandomps/dust": "master",
