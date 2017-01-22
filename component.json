@@ -1,6 +1,6 @@
 {
-    "name": "autos-listing-featured",
-    "description": "autos-listing-featured component",
+    "name": "vehicles-listing-featured",
+    "description": "vehicles-listing-featured component",
     "local": [],
     "scripts": ["index.js"],
     "styles": ["styles.css"],
@@ -10,6 +10,6 @@
         "serandomps/serand": "master",
         "serandomps/utils": "master",
         "serandomps/vehicle-service": "master",
-        "serandomps/autos-listing": "master"
+        "serandomps/vehicles-listing": "master"
     }
 }
