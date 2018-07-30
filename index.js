@@ -4,18 +4,18 @@ var utils = require('utils');
 var Vehicle = require('vehicles-service');
 var list = require('vehicles-find');
 
-module.exports = function (sandbox, fn, options) {
+module.exports = function (sandbox, options, done) {
     Vehicle.find({
         query: options,
         images: '288x162'
     }, function (err, vehicles) {
         if (err) {
-            return fn(true, serand.none);
+            return done(err);
         }
-        list(sandbox, fn, {
+        list(sandbox, {
             vehicles: vehicles,
             title: 'Featured',
             size: 4
-        });
+        }, done);
     });
 };
